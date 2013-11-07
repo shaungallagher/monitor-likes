@@ -1,0 +1,7 @@
+# Execute the monitoring script every five minutes.
+# Facebook rate-limits its search API calls, but
+# every five minutes should be fine, assuming you
+# only have a handful of users in your database.
+
+*/5 * * * * /usr/local/bin/php /path/to/monitor.php
+
